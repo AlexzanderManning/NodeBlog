@@ -8,8 +8,8 @@
 
 <% posts.forEach( post => { %>
   <div>
-    <h2><%= post.title %></h2>
-    <p><%= post.content.substring(0, 100) + " ..." %><a href=<%= 'posts/' + post.title %>>Read More</a></p>
+    <h2><%= post.post_title %></h2>
+    <p><%= post.post_content.substring(0, 100) + " ..." %><a href=<%= 'posts/' + post.post_id %>>Read More</a></p>
   </div>
 <% }); %>
 
